@@ -1,5 +1,7 @@
 <div class="field">
     <div class="card-stack">
-        <img *ngFor="let c of [1,2,3,4,5]; let i = index;" [ngStyle]="{'right.px': i * 5}" src="assets/img/cards/card_cover.png">
+        <img *ngFor="let c of [0,1,2,3,]; let i = index;" [ngStyle]="{'right.px': i * 5}" src="assets/img/cards/card_cover.png">
+        <img (click)="pickCard()" class="top-card" style="right: 25px" src="assets/img/cards/card_cover.png">
+        <img (click)="pickCard()" *ngIf="newCardAnimation" [class.pick-card]="newCardAnimation" style="right: 25px" src="assets/img/cards/ace_1.png">
     </div>
 </div>

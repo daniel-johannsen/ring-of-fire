@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameComponent implements OnInit {
 
+  newCardAnimation = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  pickCard() {
+    this.newCardAnimation = true;
   }
 
 }

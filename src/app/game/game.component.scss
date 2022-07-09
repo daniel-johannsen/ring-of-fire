@@ -14,3 +14,31 @@
         width: 120px;
     }
 }
+
+.top-card {
+    transition: all 125ms ease-in-out;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1) translateY(-10px);
+    }
+}
+
+.pick-card {
+    animation: newCardAnimation 1s ease-in-out;
+    transform: scale(1.3) translateX(140px) translateY(-180px) rotate(-10deg);
+}
+
+@keyframes newCardAnimation {
+    from {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.7);
+    }
+    50% {
+        transform: scale(1.7);
+    }
+    100% {
+        transform: scale(1.3) translateX(140px) translateY(-180px) rotate(-10deg);
+    }
+}

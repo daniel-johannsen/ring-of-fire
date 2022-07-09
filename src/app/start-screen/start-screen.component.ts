@@ -13,7 +13,7 @@ export class StartScreenComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  newGame() {
+  startGame() {
     this.router.navigateByUrl('/game');
   }
 

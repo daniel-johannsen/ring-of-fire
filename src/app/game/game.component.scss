@@ -33,6 +33,11 @@
     right: 25px;
 }
 
+.player-position {
+    position: absolute;
+    right: 0;
+}
+
 @keyframes newCardAnimation {
     from {
         transform: scale(1);

@@ -38,6 +38,12 @@
     right: 0;
 }
 
+.btn-add {
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+}
+
 @keyframes newCardAnimation {
     from {
         transform: scale(1);

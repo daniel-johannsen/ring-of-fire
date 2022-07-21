@@ -44,6 +44,13 @@
     bottom: 32px;
 }
 
+.card {
+    position: absolute;
+    bottom: 32px;
+    left: 100px;
+    right: 100px;
+}
+
 @keyframes newCardAnimation {
     from {
         transform: scale(1);

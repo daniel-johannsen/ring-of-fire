@@ -49,7 +49,6 @@ export class GameComponent implements OnInit {
         this.newCardAnimation = false;
       }, 1000);
     }
-
   }
 
   

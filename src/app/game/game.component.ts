@@ -25,7 +25,19 @@ export class GameComponent implements OnInit {
     console.log(this.game);
   }
 
+  checkPlayerArray() {
+    if (this.game.players.length < 1) {
+      alert('Please set the player names by clicking on +');
+    } else {
+      this.pickCard();
+    }
+  }
+
   pickCard() {
+    if (this.game.stack.length < 1){
+      alert('The game is over');
+      window.location.reload();
+    }
     if (!this.newCardAnimation) {
       this.currentCard = this.game.stack.pop();
       this.newCardAnimation = true;

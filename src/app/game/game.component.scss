@@ -36,6 +36,7 @@
 .player-position {
     position: absolute;
     right: 0;
+    z-index: 10;
 }
 
 .btn-add {
@@ -85,7 +86,7 @@
         img {
             position: absolute;
             width: 100px;
-            left: -144px;
+            left: -100px;
             bottom: -180px;
         }
     }

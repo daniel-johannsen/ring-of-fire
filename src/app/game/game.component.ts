@@ -56,7 +56,7 @@ export class GameComponent implements OnInit {
   pickCard() {
     if (this.game.stack.length < 1){
       alert('The game is over');
-      window.open("http://daniel-johannsen.developerakademie.net/ring-of-fire/index.html", "_self");
+      window.open("https://ring-of-fire-594a8.web.app", "_self");
     }
     if (!this.game.newCardAnimation) {
       this.takeCard();

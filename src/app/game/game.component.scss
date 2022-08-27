@@ -52,6 +52,13 @@
     right: 100px;
 }
 
+app-player {
+    cursor: pointer;
+    &:hover {
+        filter: brightness(1.15);
+    }
+}
+
 @keyframes newCardAnimation {
     from {
         transform: scale(1);
